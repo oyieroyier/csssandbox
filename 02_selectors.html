@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Selectors</title>
+		<style>
+			/* Element selector
+			
+			It is called an Element Selector because we are targeting an
+			entire element/a tag and not narrowing it down to an ID or a Class.
+			Here we are targeting the <body> tag in its entirety.
+
+			*/
+
+			body {
+				background-color: #333;
+			}
+			/* To taget a class, we use a fullstop (.) instead of a hash sign (#) */
+			h2.primary-heading {
+				color: red;
+			}
+			h2.secodary-heading {
+				color: green;
+			}
+
+			#welcome {
+				background-color: lightgreen;
+			}
+			/* Multiple Selectors */
+			#welcome,
+			#about {
+				border: 1px solid royalblue;
+				padding: 10px;
+				margin-bottom: 5px;
+			}
+
+			/* Nested Selector */
+			#welcome p {
+				font-size: 20px;
+			}
+
+			#about {
+				color: aliceblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="welcome">
+			<h2 class="primary-heading">Welcome</h2>
+			<p>
+				Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis quidem
+				facilis consectetur nam laborum dignissimos, minus ullam quibusdam velit
+				aperiam.
+			</p>
+		</div>
+		<div id="about">
+			<h2 class="secodary-heading">About</h2>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+				provident obcaecati quas officia voluptas in, eius voluptatum ratione
+				deserunt placeat!
+			</p>
+		</div>
+	</body>
+</html>
