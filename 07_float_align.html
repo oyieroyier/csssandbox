@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&family=Rubik+Bubbles&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Float and Align</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			.clr {
+				clear: both;
+			}
+			.container {
+				font-family: "BhuTuka Expanded One", cursive;
+				font-family: "Rubik Bubbles", cursive;
+				max-width: 720px;
+				margin: 50px auto;
+			}
+
+			#box2 {
+				float: left;
+				width: 20%;
+			}
+
+			#box3 {
+				float: right;
+				width: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div id="box1" class="box">
+				<h3>Box 1</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolore
+					obcaecati animi illo atque voluptatem fugit! Iure praesentium, enim
+					odio mollitia nisi quia debitis sed doloremque quam libero quibusdam
+					culpa.
+				</p>
+			</div>
+			<div id="box2" class="box">
+				<h3>Box 2</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolore
+					obcaecati animi illo atque voluptatem fugit! Iure praesentium, enim
+					odio mollitia nisi quia debitis sed doloremque quam libero quibusdam
+					culpa.
+				</p>
+			</div>
+
+			<div id="box3" class="box">
+				<h3>Box 3</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolore
+					obcaecati animi illo atque voluptatem fugit! Iure praesentium, enim
+					odio mollitia nisi quia debitis sed doloremque quam libero quibusdam
+					culpa.
+				</p>
+			</div>
+
+			<!-- Adding a utility 'clear' property. Try removing it to
+				see how it changes your render on the page. -->
+				<!-- If you use floating you may need to clear them -->
+			<div class="clr"></div>
+			<div id="box4" class="box">
+				<h3>Box 4</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit dolore
+					obcaecati animi illo atque voluptatem fugit! Iure praesentium, enim
+					odio mollitia nisi quia debitis sed doloremque quam libero quibusdam
+					culpa.
+				</p>
+			</div>
+		</div>
+	</body>
+</html>
