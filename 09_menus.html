@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Menu Styling</title>
+		<style>
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			.side-menu {
+				font-family: Arial, Helvetica, sans-serif;
+				list-style: none;
+				border: #ddd solid 1px;
+				border-radius: 5px;
+				padding: 20px;
+			}
+
+			.side-menu li {
+				font-size: 18px;
+				line-height: 2em;
+				border-bottom: #ddd dotted 1px;
+			}
+
+			.side-menu li:last-child {
+				border-bottom: none;
+			}
+
+			.side-menu li a {
+				color: #333;
+				text-decoration: none;
+			}
+
+			.side-menu li a:hover {
+				color: coral;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class="navbar">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contacts</a></li>
+			<li><a href="#">Services</a></li>
+		</ul>
+		<br />
+		<br />
+		<ul class="side-menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contacts</a></li>
+			<li><a href="#">Services</a></li>
+		</ul>
+	</body>
+</html>
