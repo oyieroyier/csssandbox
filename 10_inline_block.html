@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Inline & Block Styling</title>
+		<style>
+			body {
+				background-color: aqua;
+			}
+			li {
+				display: inline-block;
+				text-align: center;
+				background: #4a4a7c;
+				border-radius: 5px;
+				width: 32%;
+			}
+
+			li a:hover {
+				color: red;
+			}
+			li a {
+				padding: 20px;
+			}
+
+			img {
+				display: block;
+				margin: auto;
+			}
+
+			.box {
+				display: inline-block;
+				box-sizing: border-box;
+				background: #333;
+				color: aliceblue;
+				padding: 20px;
+				width: 32.8%;
+			}
+		</style>
+	</head>
+	<!-- Turning block-level elements into inline elements & vice versa. -->
+	<body>
+		<ul>
+			<li><a href="http://">Technology</a></li>
+			<li><a href="http://">Fashion</a></li>
+			<li><a href="http://">Business</a></li>
+		</ul>
+		<br /><br />
+
+		<img src="./javascript.png" alt="javascript" title="Best Language" />
+
+		<div class="box">
+			<h3>Heading</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+				omnis! Voluptatum fugit aspernatur doloribus aut facere consectetur,
+				officiis reiciendis quas!
+			</p>
+		</div>
+		<div class="box">
+			<h3>Heading</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+				omnis! Voluptatum fugit aspernatur doloribus aut facere consectetur,
+				officiis reiciendis quas!
+			</p>
+		</div>
+		<div class="box">
+			<h3>Heading</h3>
+			<p>
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus,
+				omnis! Voluptatum fugit aspernatur doloribus aut facere consectetur,
+				officiis reiciendis quas!
+			</p>
+		</div>
+	</body>
+</html>
